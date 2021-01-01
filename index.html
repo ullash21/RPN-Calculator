@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+        <title>RPN Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- the content goes here -->
+        <div id="container">
+            <form>
+                <div class="display" id="display1">
+                    <input class="in" type="number" value="0"  id="dis4" readonly="readonly" >
+                </div>
+                <div class="display" >
+                    <input class="in" type="number" value="0"  id="dis3" readonly="readonly" >
+                </div>
+                <div class="display" >
+                    <input class="in" type="number" value="0"  id="dis2"s >
+                </div>
+                <div class="display" >
+                    <input class="in" type="text"value="0" id="dis1" onkeypress="key(event)" > 
+                </div>
+            </form>
+            <div id="display2">
+                <button onclick="action(this)" id="c">C</button>
+                <button onclick="action(this)" id="ac">AC</button>
+                <button onclick="action(this)" id="pop">POP</button>
+                <button onclick="action(this)" id="swap">SWAP</button>
+                <button onclick="action(this)" id="%">%</button>
+                <button onclick="action(this)" id="sqrt">SQRT</button>
+                <button onclick="action(this)" id="pow">POW</button>
+                <button onclick="action(this)" id="inv">1/x</button>
+                <button onclick="action(this)" id="change">+/-</button>
+                <button onclick="action(this)" id="div">/</button>
+                <button onclick="action(this)" id="mp">M+</button>
+                <button onclick="action(this)" id="7">7</button>
+                <button onclick="action(this)" id="8">8</button>
+                <button onclick="action(this)" id="9">9</button>
+                <button onclick="action(this)" id="X">X</button>
+                <button onclick="action(this)" id="M">M-</button>
+                <button onclick="action(this)" id="4">4</button>
+                <button onclick="action(this)" id="5">5</button>
+                <button onclick="action(this)" id="6">6</button>
+                <button onclick="action(this)" id="minus">-</button>
+                <button onclick="action(this)" id="MR">MR</button>
+                <button onclick="action(this)" id="1">1</button>
+                <button onclick="action(this)" id="2">2</button>
+                <button onclick="action(this)" id="3">3</button>
+                <button onclick="action(this)" id="plus">+</button>
+                <button onclick="action(this)" id="MC">MC</button>
+                <button onclick="action(this)" id="0">0</button>
+                <button onclick="action(this)" id="dot">.</button>
+                <button onclick="action(this)" id="enter">ENTER</button>
+            </div>
+        </div>
+    </body>
+</html>
