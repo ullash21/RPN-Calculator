@@ -24,8 +24,8 @@ function keyAction(s){
       break;
     case "ac":
       for (i = 1; i < 5; i++) {
-        el=document.getElementById("dis"+i);
-        el.value="0"
+        e=document.getElementById("dis"+i);
+        e.value="0"
       }
       break;
     case "0":
