@@ -1,31 +1,43 @@
+body{
+  height: 100vh;
+}
 #title{
   margin: auto;
   text-align:center;
-  margin-top:30px;
+  /* margin-top:30px; */
+  padding-top: 1%;
+}
+form{
+  height: 35%;
 }
 #container {
     background-color: gray;
     margin: auto;
-    width: 320px;
-    height: 380px;
+    /* width: 320px; */
+    width: 15%;
+    /* height: 380px; */
+    height: 40%;
     border: 5px outset black;
     margin-top: 30px;
     border-radius: 10px;
+    /* padding-bottom: 1%; */
   }
   #display1{
-    margin-top: 30px;
+    margin-top: 5%;
   }
   .display {
     margin: auto;
-    margin-top: 5px;
+    /* margin-top: 2%; */
+    height: 25%;
   }
   .in{
-    font-size:25px;
+    font-size:100%;
     margin: auto;
     text-align: right; 
     width: 90%; 
     border: 1px solid black; 
-    height:25px;
+    /* height:25px; */
+    height: 75%;
     margin-left: 4.5%;
   }
   /* Chrome */
@@ -41,16 +53,17 @@ input[type=number] {
 #display2 {
   margin: auto;
   width: 92%;
-  margin-top: 10px;
+  margin-top: 4%;
+  height: 55%;
   display: grid;
   grid-template: repeat(6,1fr)/repeat(5,1fr);
 }
 button{
-  height: 30px;
+  /* height: 30px; */
   border-radius: 5px;
   border: 1px solid ridge;
   /* margin-left:1px ; */
-
+  font-size: 1 em;
 }
 #Enter{
   grid-column: 4/6;
@@ -61,8 +74,9 @@ button{
   border: 2px outset slateblue;
   margin: auto;
   margin-top: 25px;
-  width: 800px;
-  height: 400px;
+  width: 45%;
+  /* height: 400px; */
+  height: 40%;
   border-radius: 1px;
   background-color: lightgray;
 }
