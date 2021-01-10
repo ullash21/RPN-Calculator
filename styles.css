@@ -62,6 +62,7 @@ input[type=number] {
 button{
   border-radius: 5px;
   font-size: 1vw;
+  background-color: whitesmoke;
 }
 #Enter{
   grid-column: 4/6;
