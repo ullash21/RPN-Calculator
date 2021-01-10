@@ -38,7 +38,6 @@ form{
     text-align: right; 
     width: 90%; 
     border: 1px solid black; 
-    /* height:25px; */
     height: 75%;
     margin-left: 4.5%;
   }
@@ -61,15 +60,11 @@ input[type=number] {
   grid-template: repeat(6,1fr)/repeat(5,1fr);
 }
 button{
-  /* height: 30px; */
   border-radius: 5px;
-  /* border: 0.5% solid black; */
-  /* margin-left:1px ; */
   font-size: 1vw;
 }
 #Enter{
   grid-column: 4/6;
-  /* width: 127px; */
 
 }
 #instructions{
@@ -77,7 +72,6 @@ button{
   margin: auto;
   margin-top: 25px;
   width: 45%;
-  /* height: 400px; */
   height: 20%;
   border-radius: 1px;
   background-color: lightgray;

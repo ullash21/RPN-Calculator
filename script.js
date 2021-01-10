@@ -168,3 +168,25 @@ function keyAction(s){
     default:
   }
 }
+buttons = document.getElementsByTagName("button");
+
+for(button of buttons){
+  addHover(button)
+  delHover(button)
+}
+function addHover(button) {
+  button.addEventListener("mouseover",function(){
+    button.style.background="#fed8b1"//light orange
+  })
+  // button.addEventListener("touchstart",function(){
+  //   button.style.background="#fed8b1"//light orange
+  // })
+}
+function delHover(button) {
+  button.addEventListener("mouseout",function(){
+    button.style.background="#EFEFEF"// lightgray
+  })
+  // button.addEventListener("touchend",function(){
+  //   button.style.background="#EFEFEF"// lightgray
+  // })
+}
