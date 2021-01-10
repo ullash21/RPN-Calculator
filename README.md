@@ -19,5 +19,5 @@ Download the code by pressing the code download button on top right of this page
 *Step 2*
 Unzip the files in a suitable folder
 
-*Step 3
+*Step 3*
 Open `index.html` file with a borwser
