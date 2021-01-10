@@ -183,10 +183,13 @@ function addHover(button) {
   })
 }
 function delHover(button) {
-  button.addEventListener("mouseout",function(){
-    button.style.background="#EFEFEF"// lightgray
-  })
-  button.addEventListener("touchend",function(){
-    button.style.background="#EFEFEF"// lightgray
-  })
+  // button.addEventListener("mouseout",function(){
+  //   button.style.background="whitesmoke"// lightgray
+  // })
+  events=["touchend", "mouseover"]
+  for(e of events){
+    button.addEventListener(e,function(){
+      button.style.background="whitesmoke"
+    })
+  }
 }
