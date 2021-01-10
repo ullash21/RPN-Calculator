@@ -186,7 +186,7 @@ function delHover(button) {
   // button.addEventListener("mouseout",function(){
   //   button.style.background="whitesmoke"// lightgray
   // })
-  events=["touchend", "mouseover"]
+  events=["touchend","touchcancel","touchmove","mouseout"]
   for(e of events){
     button.addEventListener(e,function(){
       button.style.background="whitesmoke"
