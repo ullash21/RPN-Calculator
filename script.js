@@ -169,7 +169,7 @@ function keyAction(s){
   }
 }
 buttons = document.getElementsByTagName("button");
-x=window.matchMedia("(max-width: 1050px)")
+x=window.matchMedia("(max-width: 480px)")
 if(!x.matches){
 for(button of buttons){
   addHover(button)
