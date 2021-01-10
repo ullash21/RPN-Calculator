@@ -169,27 +169,30 @@ function keyAction(s){
   }
 }
 buttons = document.getElementsByTagName("button");
-
+x=window.matchMedia("(max-width: 1050px)")
+if(!x.matches){
 for(button of buttons){
   addHover(button)
   delHover(button)
 }
-function addHover(button) {
-  button.addEventListener("mouseover",function(){
-    button.style.background="#fed8b1"//light orange
-  })
-  button.addEventListener("touchstart",function(){
-    button.style.background="#fed8b1"//light orange
-  })
-}
-function delHover(button) {
-  // button.addEventListener("mouseout",function(){
-  //   button.style.background="whitesmoke"// lightgray
-  // })
-  events=["touchend","touchcancel","touchmove","mouseout"]
-  for(e of events){
-    button.addEventListener(e,function(){
-      button.style.background="whitesmoke"
+
+  function addHover(button) {
+    button.addEventListener("mouseover",function(){
+      button.style.background="#fed8b1"//light orange
     })
+    // button.addEventListener("touchstart",function(){
+    //   button.style.background="#fed8b1"//light orange
+    // })
+  }
+  function delHover(button) {
+    button.addEventListener("mouseout",function(){
+      button.style.background="whitesmoke"// lightgray
+    })
+    // events=["touchend","touchcancel","touchmove","mouseout"]
+    // for(e of events){
+    //   button.addEventListener(e,function(){
+    //     button.style.background="whitesmoke"
+    //   })
+    // }
   }
 }
