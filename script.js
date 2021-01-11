@@ -1,4 +1,5 @@
 m=0
+stack=[]
 el=document.getElementById("dis1");
 function action(e){
   el.style.color='black'
@@ -26,6 +27,7 @@ function keyAction(s){
       for (i = 1; i < 5; i++) {
         e=document.getElementById("dis"+i);
         e.value="0"
+        stack=[]
       }
       break;
     case "0":
@@ -55,6 +57,7 @@ function keyAction(s){
       if(isNaN(n))
         el.style.color='red'
       else{
+        stack.push(document.getElementById("dis4").value)
         for (i = 4; i>1; i--) {
           e1=document.getElementById("dis"+i)
           e2=document.getElementById("dis"+(i-1))
@@ -69,7 +72,10 @@ function keyAction(s){
         e2=document.getElementById("dis"+(i-1))
         e2.value=e1.value;
       }
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "plus":
     case "+":
@@ -80,7 +86,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Number(el.value)+v;
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "minus":
     case "-":
@@ -91,7 +100,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Number(el.value)-v;
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "X":
       v=Number(document.getElementById("dis1").value);
@@ -101,7 +113,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Number(el.value)*v;
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "div":
     case "/":
@@ -112,7 +127,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Number(el.value)/v;
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "pow":
       v=Number(document.getElementById("dis1").value);
@@ -122,7 +140,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Math.pow(Number(el.value),v);
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case "%":
       v=Number(document.getElementById("dis1").value);
@@ -132,7 +153,10 @@ function keyAction(s){
         e2.value=e1.value;
       }
       el.value=Number(el.value)*v/100;
-      document.getElementById("dis4").value=0;
+      if(stack.length==0)
+        document.getElementById("dis4").value=0;
+      else
+        document.getElementById("dis4").value=stack.pop();
       break;
     case 'inv':
       el.value=1/Number(el.value)
